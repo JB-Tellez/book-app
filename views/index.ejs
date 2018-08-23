@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="app.css">
+  <title>Hi there</title>
+</head>
+<body>
+  <h1>Count: <%= books.length %> </h1>
+  <ul>
+
+    <% books.forEach((book) => {  %>
+      <li><%= book.title %> : <%= book.author %> <img src="<%= book.image_url %>" /> </li>
+    <% }) %>
+    </ul>
+</body>
+
+<script>
+
+</script>
+</html>
