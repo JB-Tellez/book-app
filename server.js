@@ -33,7 +33,7 @@ app.get('/books', (request, response) => {
 });
 
 app.get('*', (request, response) => {
-  response.send('ouch');
+  response.render('pages/error');
 })
 
 app.listen(PORT, () => console.log('Listening on PORT', PORT));
